@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  background: #6b3cc9;
+  position: fixed;
+  width: 100%;
+}
+.navbar a {
+  color: white;
+}
+.web-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 150px;
+  /* position: absolute; */
+  top: 20px;
+}
+parallax {
+  /* The image used */
+  background-image: url("img/hero_section.png");
+  /* Set a specific height */
+  min-height: 350px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.border {
+  display: inline-block;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  width: 60%;
+
+  margin: 10px;
+}
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+.parallax-Text h1 {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 360px) {
+  .parallax-Text h1 {
+    font-size: 30px;
+  }
+}
+.parallax-Text p {
+  font-size: 18px;
+  color: #000;
+  text-shadow: #e0e0e0 1px 1px 0;
+  color: #000;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  word-spacing: 1px;
+}
+.parallax-Text li {
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  word-spacing: 1px;
+  font-size: 15px;
+  font-weight: 250;
+}
+.border {
+  color: #ffffff;
+  background: linear-gradient(256.73deg, #1cbddd 27.86%, #4dca79 100%),
+    linear-gradient(0deg, #ffffff, #ffffff);
+  width: 630px;
+  height: 120px;
+  font-weight: 800;
+  position: absolute;
+  top: 200px;
+  left: 20px;
+}
+
+.container-sli {
+  width: 80%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 108px;
+}
+.container-sli h2 {
+  color: #6b3cc9;
+  font-weight: 600;
+}
+
+.btn {
+  background: #f28d35;
+}
+
+.footer {
+  background: #6b3cc9;
+  line-height: 0.9;
+}
